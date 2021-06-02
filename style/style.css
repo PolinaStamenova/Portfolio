@@ -3,8 +3,8 @@
                 ****** RESET ******
     ==============================================
 */
-body {
-  margin: 0;
+* {
+  /* margin: 0; */
   padding: 0;
 }
 
@@ -14,7 +14,6 @@ ul {
 
 a {
   text-decoration: none;
-  color: white;
 }
 
 a:hover {
@@ -28,7 +27,15 @@ a:hover {
 */
 
 /* ------- Navigation bar ------- */
+main {
+  background-image: url("../images/header-shapes\ mobile.png");
+  background-repeat: no-repeat;
+  /* background-size: 100%; */
+}
 nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -46,4 +53,32 @@ nav p {
   margin-top: 58px;
   margin-right: 24px;
   color: #6070ff;
+}
+/* ------- Header ------- */
+
+header {
+  margin: 128px 24px 136px 24px;
+}
+header h1 {
+  color: #172b4d;
+  font-family: Poppins;
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 52px;
+}
+header p {
+  margin-top: 12px;
+  color: #344563;
+  font-family: Poppins;
+  font-size: 16px;
+  line-height: 24px;
+}
+header span {
+  color: #7f8cff;
+  margin-top: 12px;
+}
+header ul {
+  margin-top: 12px;
+  display: flex;
+  gap: 20px;
 }
