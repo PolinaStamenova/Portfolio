@@ -2,7 +2,7 @@
 
 # Portfolio
 
-> XXXXXXXXXXXXXXXX
+> Personal portfolio project
 
 <!-- ![screenshot](./app_screenshot.png) -->
 
@@ -17,7 +17,7 @@ To get a local copy up and running follow these simple example steps.
 
 ## Live Demo
 
-[Live Demo Link](XXXXXXXXXXXXXXXXXXX)
+[Live Demo Link](https://polinastamenova.github.io/Portfolio/)
 
 ## Instructions
 
