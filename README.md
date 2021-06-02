@@ -2,7 +2,7 @@
 
 # Portfolio
 
-> Personal portfolio project
+> Personal portfolio project.
 
 <!-- ![screenshot](./app_screenshot.png) -->
 
