@@ -1,6 +1,6 @@
 /*
     ==============================================
-                ****** RESET ******
+                ****** RESET *****
     ==============================================
 */
 * {
@@ -30,7 +30,7 @@ main {
   /* background-size: 100%; */
 }
 
-nav {
+header {
   position: fixed;
   background-color: #fff;
   top: 0;
@@ -40,7 +40,7 @@ nav {
   justify-content: space-between;
 }
 
-nav p {
+header a {
   margin-top: 58px;
   margin-left: 24px;
   color: #6070ff;
@@ -58,11 +58,11 @@ nav p {
 
 /* ------- Header ------- */
 
-header {
+section {
   margin: 128px 24px 136px 24px;
 }
 
-.header-title {
+.section-title {
   color: #172b4d;
   font-family: "Poppins", sans-serif;
   font-weight: bold;
@@ -70,7 +70,7 @@ header {
   line-height: 52px;
 }
 
-header p {
+section p {
   margin-top: 12px;
   color: #344563;
   font-family: "Poppins", sans-serif;
@@ -78,12 +78,12 @@ header p {
   line-height: 24px;
 }
 
-header .main-text {
+section .main-text {
   color: #7f8cff;
   margin-top: 12px;
 }
 
-header ul {
+section ul {
   margin-top: 12px;
   display: flex;
   gap: 20px;
