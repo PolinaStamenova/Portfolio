@@ -381,6 +381,45 @@ textarea {
     font-weight: 500;
     font-size: 15px;
     line-height: 20px;
+    position: relative;
+  }
+
+  header nav ul li a::after {
+    content: "]";
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    display: block;
+    font-weight: 500;
+    color: #344563;
+    font-size: 15px;
+    opacity: 0;
+  }
+
+  header nav ul li a::before {
+    content: "[";
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    display: block;
+    font-weight: 500;
+    color: #344563;
+    font-size: 15px;
+    opacity: 0;
+  }
+
+  header nav ul li a:hover::before{
+    left: -10px;
+    transition: 0.5s;
+    opacity: 1;
+  }
+
+  header nav ul li a:hover::after{
+    right: -10px;
+    transition: 0.5s;
+    opacity: 1;
   }
 
   .section-top {
