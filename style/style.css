@@ -47,13 +47,23 @@ header {
   justify-content: space-between;
 }
 
-header a {
+header .my-logo {
   margin-left: 24px;
   color: #6070ff;
   font-family: "Poppins", sans-serif;
   font-weight: bold;
   font-size: 18px;
   line-height: 20px;
+}
+
+section ul {
+  margin-top: 12px;
+  display: flex;
+  gap: 20px;
+}
+
+header nav ul {
+  display: none;
 }
 
 .fa-bars {
@@ -63,9 +73,10 @@ header a {
 
 /* ------- Section ------- */
 .section-top {
-  margin: 0 24px 136px 24px;
+  /* margin: 0 24px 136px 24px; */
   padding-top: 128px;
-  padding-bottom: 138px;
+
+  /* padding-bottom: 138px; */
 }
 
 .section-title {
@@ -74,6 +85,7 @@ header a {
   font-weight: bold;
   font-size: 40px;
   line-height: 52px;
+  word-wrap: break-word;
 }
 
 section p {
@@ -89,20 +101,18 @@ section .main-text {
   margin-top: 12px;
 }
 
-section ul {
-  margin-top: 12px;
-  display: flex;
-  gap: 20px;
-}
-
-/* ------- Section - Cards ------- */
+/* ------- Section - Cards Project ------- */
 .cards-project-list {
-  margin: 114px 24px 114px 24px;
+  width: 88%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 114px;
   display: grid;
   gap: 88px;
 }
 
 .card {
+  background-color: #fff;
   border: 1px solid #dfe1e6;
   box-sizing: border-box;
   border-radius: 16px;
@@ -110,8 +120,8 @@ section ul {
 }
 
 .card img {
-  width: 100%;
-  height: 220px;
+  max-width: 100%;
+  height: auto;
 }
 
 .card .card-title {
@@ -151,6 +161,10 @@ section ul {
 .card .butonns-languages {
   display: flex;
   gap: 8px;
+}
+
+.ruby-on-rails {
+  display: none;
 }
 
 .btn-lg {
@@ -216,6 +230,10 @@ section ul {
   margin-right: 12px;
 }
 
+.lg-dropdown p {
+  padding-left: 16px;
+}
+
 .about-myself .skills p {
   margin-top: 0;
 }
@@ -234,20 +252,16 @@ section ul {
   font-weight: 500;
 }
 
-.about-myself-content .lg-dropdown-description {
+.lg-dropdown-description {
   display: flex;
   background-color: #f7f7f9;
   padding: 12px 9px 12px 9px;
 }
 
-.about-myself-content .lg-dropdown {
+.lg-dropdown {
   display: flex;
   flex-direction: column;
   gap: 12px;
-}
-
-.about-myself-content .lg-dropdown p {
-  padding-left: 16px;
 }
 
 .skills-border {
@@ -319,4 +333,223 @@ textarea {
 
 .btn-contact {
   width: 48%;
+}
+
+/*
+      ==============================================
+       *** MEDIA QUERY - Desktop Version- 1024px ***
+      ==============================================
+*/
+
+@media only screen and (min-width: 1024px) {
+  /* ------- Main ------- */
+  main {
+    height: 90vh;
+    background-image: none;
+    border-bottom-left-radius: 150px;
+    padding: 100px 24px 0 24px;
+  }
+
+  header nav {
+    display: flex;
+  }
+
+  header .my-logo {
+    margin-left: 154px;
+  }
+
+  header nav .fa-bars {
+    display: none;
+  }
+
+  header nav ul {
+    display: flex;
+    gap: 52px;
+    padding-right: 154px;
+  }
+
+  header nav ul li a {
+    color: #344563;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 20px;
+  }
+
+  .section-top {
+    margin: 0;
+    background-image: url("../images/header-shapes-desktop.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-size: 90vw 74vh;
+    padding: 270px 260px 257px 260px;
+  }
+
+  .section-top h1 {
+    font-size: 48px;
+    line-height: 60px;
+  }
+
+  .section-top p {
+    font-size: 20px;
+    line-height: 28px;
+  }
+
+  /* ------- Section - Cards Project ------- */
+  .card {
+    padding: 0;
+  }
+
+  .cards-project-list {
+    padding: 142px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card img {
+    width: 100%;
+    height: auto;
+  }
+
+  .card:nth-child(even) {
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 16px;
+    max-width: 1156px;
+  }
+
+  .card:nth-child(even) img {
+    padding: 24px 22px 24px 0;
+  }
+
+  .card:nth-child(even) .card-content {
+    padding: 48px 0 0 48px;
+  }
+
+  .card:nth-child(odd) {
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+    max-width: 1156px;
+  }
+
+  .card:nth-child(odd) img {
+    padding: 24px 0 24px 24px;
+  }
+
+  .card:nth-child(odd) .card-content {
+    padding: 48px 46px 0 0;
+  }
+
+  .card .card-image1 {
+    content: url("../images/desktopt-image1.png");
+  }
+
+  .card .card-image2 {
+    content: url("../images/desktop-image2.png");
+  }
+
+  .card .card-image3 {
+    content: url("../images/desktopt-image3.png");
+  }
+
+  .card .card-image4 {
+    content: url("../images/desktopt-image4.png");
+  }
+
+  .card .card-content .card-description,
+  .card .card-content .card-description span {
+    font-weight: 400;
+  }
+
+  .card .butonns-languages {
+    margin-top: 24px;
+  }
+
+  .card .ruby-on-rails {
+    display: block;
+  }
+
+  .card .btn-project {
+    cursor: url("../images/hand-cursor-1.png"), auto;
+    margin-top: 50px;
+  }
+
+  .card .btn-project-pressed {
+    color: #fff;
+    background-color: #2230d2;
+  }
+
+  /* ------- Section - About Myself ------- */
+
+  .about-myself-container {
+    display: grid;
+    grid-template-columns: 40% 60%;
+    padding: 114px 182px 0 142px;
+  }
+
+  .about-myself .section-title {
+    padding: 0;
+  }
+
+  .skills .fa-chevron-down,
+  .skills .fa-chevron-right {
+    padding-right: 0;
+  }
+
+  .lg-dropdown {
+    flex-direction: row;
+  }
+
+  .lg-dropdown-description {
+    flex-direction: column;
+    width: 122px;
+    height: 120px;
+    border-radius: 2px;
+  }
+
+  .about-myself .lg-dropdown-description img {
+    width: 48px;
+    height: 48px;
+  }
+
+  .lg-dropdown-description p {
+    padding-left: 5px;
+  }
+
+  .skills-border {
+    padding-top: 0;
+  }
+
+  /* ------- Footer ------- */
+
+  footer .contact form {
+    align-items: center;
+  }
+
+  .contact {
+    background-image: url("../images/footer-desktop.png");
+    background-position: center;
+    border-top-left-radius: 150px;
+    padding: 142px 24px 127px 24px;
+  }
+
+  footer .contact-section-text-content {
+    width: 40%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .contact input,
+  textarea {
+    width: 30%;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 2px;
+  }
+
+  footer form .btn-contact {
+    width: 15%;
+  }
 }
