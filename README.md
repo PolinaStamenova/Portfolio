@@ -4,7 +4,7 @@
 
 > Personal portfolio project.
 
-<!-- ![screenshot](./app_screenshot.png) -->
+![screenshot](./images/Screenshoot-Portfolio.png)
 
 ## Built With
 
@@ -17,7 +17,7 @@ To get a local copy up and running follow these simple example steps.
 
 ## Live Demo
 
-[Live Demo Link](https://polinastamenova.github.io/Portfolio/)
+[Live Link](https://polinastamenova.github.io/Portfolio/)
 
 ## Instructions
 
