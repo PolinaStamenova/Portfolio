@@ -34,3 +34,15 @@ contactLink.textContent = "Contact";
 contactLink.href = "#contact";
 contact.appendChild(contactLink);
 menuList.appendChild(contact);
+
+let hamburger = document.getElementById('mob-menu');
+hamburger.addEventListener('click', ()=>{
+  menu.style.display='block';
+  document.getElementById('main').style.filter='blur(5px)';
+
+})
+
+icon.addEventListener('click', ()=>{
+  menu.style.display='none';
+  document.getElementById('main').style.filter='none';
+})

@@ -61,7 +61,7 @@ body {
 
 
 main {
-  filter: blur(5px);
+  /* filter: blur(5px); */
   background-image: url("../images/header-shapes\ mobile.png");
   background-repeat: no-repeat;
   background-color: #fff;
