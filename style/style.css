@@ -29,7 +29,41 @@ body {
   position: relative;
 }
 
+.menu-style {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  display: none;
+  background-color: #1b31f0a2;
+}
+
+.menu-style i {
+  color: #fff;
+  display: flex;
+  justify-content: flex-end;
+  padding-top: 62px;
+  padding-right: 38px;
+}
+
+.menu-style .menu-list {
+  margin-top: 40px;
+  padding-left: 28px;
+}
+
+.menu-style a {
+  color: #fff;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 64px;
+}
+
 main {
+  height: 100vh;
   background-image: url("../images/header-shapes\ mobile.png");
   background-repeat: no-repeat;
   background-color: #fff;
@@ -100,6 +134,10 @@ section .main-text {
 }
 
 /* ------- Section - Cards Project ------- */
+.cards-project {
+  padding-top: 114px;
+}
+
 .cards-project-list {
   width: 88%;
   margin-left: auto;
@@ -345,7 +383,7 @@ textarea {
     height: 90vh;
     background-image: none;
     border-bottom-left-radius: 150px;
-    padding: 100px 24px 0 24px;
+    padding: 100px 24px 0 0;
   }
 
   header nav {
