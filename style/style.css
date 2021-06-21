@@ -30,8 +30,11 @@ body {
 }
 
 .menu-style {
-  position: absolute;
+  position: fixed;
+  left: 0;
+  right: 0;
   top: 0;
+  bottom: 0;
   width: 100%;
   height: 100%;
   display: none;
@@ -59,9 +62,8 @@ body {
   line-height: 64px;
 }
 
-
 main {
-  /* filter: blur(5px); */
+  height: 100vh;
   background-image: url("../images/header-shapes\ mobile.png");
   background-repeat: no-repeat;
   background-color: #fff;
@@ -132,6 +134,10 @@ section .main-text {
 }
 
 /* ------- Section - Cards Project ------- */
+.cards-project {
+  padding-top: 114px;
+}
+
 .cards-project-list {
   width: 88%;
   margin-left: auto;
@@ -377,7 +383,7 @@ textarea {
     height: 90vh;
     background-image: none;
     border-bottom-left-radius: 150px;
-    padding: 100px 24px 0 24px;
+    padding: 100px 24px 0 0;
   }
 
   header nav {
