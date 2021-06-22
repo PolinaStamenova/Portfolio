@@ -114,4 +114,31 @@ myProjects.push(
   )
 );
 
-console.log(myProjects);
+const projectSection = document.getElementById("portfolio");
+const cardUL = document.createElement("ul");
+cardUL.className = "cards-project-list";
+projectSection.appendChild(cardUL);
+
+for (i = 0; i < myProjects.length; i++) {
+  let cardList = document.createElement("li");
+  cardList.className = "card";
+  cardUL.appendChild(cardList);
+
+  let cardImage = document.createElement("img");
+  cardImage.className = "card-image1";
+
+  let cardContent = document.createElement("div");
+  cardContent.className = "card-content";
+  cardList.appendChild(cardImage, cardContent);
+
+  let cardTitle = document.createElement("h2");
+  cardTitle.classList = "card-title";
+
+  let cardDescription = document.createElement("p");
+  cardDescription.className = "card-description";
+  cardDescription.textContent = `${myProjects[i].descriptionName}`;
+
+  let cardSpan = document.createElement("span");
+  cardSpan.textContent = `${myProjects[i].descriptionPosition}`;
+  cardDescription.appendChild(cardSpan);
+}
