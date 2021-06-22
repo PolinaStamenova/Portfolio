@@ -70,3 +70,48 @@ document
     menu.style.display = "none";
     document.getElementById("main").style.filter = "none";
   });
+
+// =======================================================================
+// --------------------- Details popup window MOBILE----------------------
+// =======================================================================
+
+// ************Create HTML- project section************
+
+function ProjectCard(
+  imageLink,
+  imageAltText,
+  title,
+  descriptionName,
+  descriptionPosition,
+  descriptionYear,
+  descriptionContetnt,
+  technologies
+) {
+  this.image = {
+    link: imageLink,
+    altText: imageAltText,
+  };
+  this.title = title;
+  this.descriptionName = descriptionName;
+  this.descriptionPosition = descriptionPosition;
+  this.descriptionYear = descriptionYear;
+  this.descriptionContetnt = descriptionContetnt;
+  this.technologies = technologies;
+}
+
+let myProjects = [];
+
+myProjects.push(
+  new ProjectCard(
+    "images/image1.png",
+    "Name of Project",
+    "Tonic",
+    "CANOPY",
+    "Back End Dev",
+    "2015",
+    "A daily selection of privately personalized reads; no accounts or sign-ups required.",
+    ["html", "css", "javaScript"]
+  )
+);
+
+console.log(myProjects);
