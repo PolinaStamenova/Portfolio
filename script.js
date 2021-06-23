@@ -343,14 +343,14 @@ function seeProjectButton(i) {
 }
 // ************Form validation************
 
-const form = document.getElementById("contact-form");
-const emailInput = document.getElementById("email-address");
+const form = document.getElementById("form-contact");
+const emailInput = document.getElementById("user-email");
 const errorMessage = document.getElementById("error-message");
 
-form.addEventListener("submit", (e) => {
+
+form.addEventListener('submit', (e) => {
   if (emailInput.value.toLowerCase() !== emailInput.value) {
     e.preventDefault();
-    errorMessage.textContent =
-      "Please, use only lowercase ltter for your email!";
+    errorMessage.textContent ="Please, use only lowercase letter for your email!";
   }
 });
