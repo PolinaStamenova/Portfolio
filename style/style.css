@@ -41,6 +41,20 @@ body {
   background-color: #1b31f0a2;
 }
 
+/* ------- MOBILE POPUP WINDOW ------- */
+.popup-mobile-card {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  display: none;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
 .menu-style i {
   color: #fff;
   display: flex;
@@ -478,19 +492,19 @@ textarea {
     padding: 48px 46px 0 0;
   }
 
-  .card .card-image1 {
+  .card .card-image0 {
     content: url("../images/desktopt-image1.png");
   }
 
-  .card .card-image2 {
+  .card .card-image1 {
     content: url("../images/desktop-image2.png");
   }
 
-  .card .card-image3 {
+  .card .card-image2 {
     content: url("../images/desktopt-image3.png");
   }
 
-  .card .card-image4 {
+  .card .card-image3 {
     content: url("../images/desktopt-image4.png");
   }
 

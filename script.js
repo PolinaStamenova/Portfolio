@@ -114,6 +114,46 @@ myProjects.push(
   )
 );
 
+myProjects.push(
+  new ProjectCard(
+    "images/image2.png",
+    "Name of Project",
+    "Tonic",
+    "CANOPY",
+    "Back End Dev",
+    "2015",
+    "A daily selection of privately personalized reads; no accounts or sign-ups required.",
+    ["html", "css", "javaScript"]
+  )
+);
+
+myProjects.push(
+  new ProjectCard(
+    "images/image3.png",
+    "Name of Project",
+    "Tonic",
+    "CANOPY",
+    "Back End Dev",
+    "2015",
+    "A daily selection of privately personalized reads; no accounts or sign-ups required.",
+    ["html", "css", "javaScript"]
+  )
+);
+
+myProjects.push(
+  new ProjectCard(
+    "images/image4.png",
+    "Name of Project",
+    "Tonic",
+    "CANOPY",
+    "Back End Dev",
+    "2015",
+    "A daily selection of privately personalized reads; no accounts or sign-ups required.",
+    ["html", "css", "javaScript"]
+  )
+);
+console.log(myProjects);
+
 const projectSection = document.getElementById("portfolio");
 const cardUL = document.createElement("ul");
 cardUL.className = "cards-project-list";
@@ -125,20 +165,52 @@ for (i = 0; i < myProjects.length; i++) {
   cardUL.appendChild(cardList);
 
   let cardImage = document.createElement("img");
-  cardImage.className = "card-image1";
+  cardImage.className = `card-image${i}`;
+  cardImage.src = myProjects[i].image.link;
+  cardImage.altText = myProjects[i].image.altText;
+  cardList.appendChild(cardImage);
 
   let cardContent = document.createElement("div");
   cardContent.className = "card-content";
-  cardList.appendChild(cardImage, cardContent);
+  cardList.appendChild(cardContent);
 
   let cardTitle = document.createElement("h2");
-  cardTitle.classList = "card-title";
+  cardTitle.className = "card-title";
+  cardTitle.textContent = myProjects[i].title;
+  cardContent.appendChild(cardTitle);
 
   let cardDescription = document.createElement("p");
   cardDescription.className = "card-description";
   cardDescription.textContent = `${myProjects[i].descriptionName}`;
+  cardContent.appendChild(cardDescription);
 
   let cardSpan = document.createElement("span");
-  cardSpan.textContent = `${myProjects[i].descriptionPosition}`;
+  cardSpan.textContent = `&#9679; ${myProjects[i].descriptionPosition} &#9679; ${myProjects[i].descriptionYear} `;
   cardDescription.appendChild(cardSpan);
+
+  let cardDescriptionContent = document.createElement("p");
+  cardDescriptionContent.textContent =
+    "A daily selection of privately personalized reads; no accounts or sign-ups required.";
+  cardDescriptionContent.className = "card-text-content";
+  cardContent.appendChild(cardDescriptionContent);
+
+  let cardTechnologiesList = document.createElement("ul");
+  cardTechnologiesList.className = "butonns-languages";
+  cardContent.appendChild(cardTechnologiesList);
+
+  myProjects[i].technologies.forEach((element) => {
+    let cardTechnologie = document.createElement("li");
+    cardTechnologie.className = "btn-lg";
+    cardTechnologie.textContent = element;
+    cardTechnologiesList.appendChild(cardTechnologie);
+  });
+
+  let cardButton = document.createElement("button");
+  cardButton.className = "btn-project";
+  cardButton.textContent = "See Project";
+  cardContent.appendChild(cardButton);
+  cardButton.id = i;
+  cardButton.addEventListener("click", (e) => {
+    seeProjectButton(e.target.id);
+  });
 }
