@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <meta charset="UTF-8" />
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script
       async
@@ -15,7 +16,6 @@
 
       gtag("config", "G-Y3SX13J99V");
     </script>
-    <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Polina`s Portfolio</title>
@@ -31,8 +31,8 @@
     <link rel="stylesheet" href="style/style.css" />
   </head>
   <body id="body-project">
-    <main id="main">
-      <header>
+    <main id="main" class="opacityPopup">
+      <header id="header">
         <a class="my-logo" href="#">My logo</a>
         <nav>
           <ul class="header-links">
@@ -82,108 +82,8 @@
         </ul>
       </section>
     </main>
-    <section class="cards-project" id="portfolio">
-      <ul class="cards-project-list">
-        <li class="card">
-          <img
-            class="card-image1"
-            src="images/image1.png"
-            alt="Picture of projects"
-          />
-          <div class="card-content">
-            <h2 class="card-title">TONIC</h2>
-            <p class="card-description">
-              CANOPY <span> &#9679; Back End Dev &#9679; 2015</span>
-            </p>
-            <p class="card-text-content">
-              A daily selection of privately personalized reads; no accounts or
-              sign-ups required.
-            </p>
-            <ul class="butonns-languages">
-              <li class="btn-lg">html</li>
-              <li class="btn-lg">css</li>
-              <li class="btn-lg">javaScript</li>
-            </ul>
-            <button type="button" class="btn-project">See Project</button>
-          </div>
-        </li>
-        <li class="card">
-          <img
-            class="card-image2"
-            src="images/image2.png"
-            alt="Picture of projects"
-          />
-          <div class="card-content card-content-desctop">
-            <h2 class="card-title">TONIC</h2>
-            <p class="card-description">
-              CANOPY <span> &#9679; Back End Dev &#9679; 2015</span>
-            </p>
-            <p class="card-text-content">
-              A daily selection of privately personalized reads; no accounts or
-              sign-ups required.
-            </p>
-            <ul class="butonns-languages">
-              <li class="btn-lg">html</li>
-              <li class="btn-lg ruby-on-rails">Ruby on rails</li>
-              <li class="btn-lg">css</li>
-              <li class="btn-lg">javaScript</li>
-            </ul>
-            <button type="button" class="btn-project">See Project</button>
-          </div>
-        </li>
-        <li class="card">
-          <img
-            class="card-image3"
-            src="images/image3.png"
-            alt="Picture of projects"
-          />
-          <div class="card-content">
-            <h2 class="card-title">TONIC</h2>
-            <p class="card-description">
-              CANOPY <span> &#9679; Back End Dev &#9679; 2015</span>
-            </p>
-            <p class="card-text-content">
-              A daily selection of privately personalized reads; no accounts or
-              sign-ups required.
-            </p>
-            <ul class="butonns-languages">
-              <li class="btn-lg">html</li>
-              <li class="btn-lg ruby-on-rails">Ruby on rails</li>
-              <li class="btn-lg">css</li>
-              <li class="btn-lg">javaScript</li>
-            </ul>
-            <button type="button" class="btn-project btn-project-pressed">
-              See Project
-            </button>
-          </div>
-        </li>
-        <li class="card">
-          <img
-            class="card-image4"
-            src="images/image4.png"
-            alt="Picture of projects"
-          />
-          <div class="card-content card-content-desctop">
-            <h2 class="card-title">TONIC</h2>
-            <p class="card-description">
-              CANOPY <span> &#9679; Back End Dev &#9679; 2015</span>
-            </p>
-            <p class="card-text-content">
-              A daily selection of privately personalized reads; no accounts or
-              sign-ups required.
-            </p>
-            <ul class="butonns-languages">
-              <li class="btn-lg">html</li>
-              <li class="btn-lg ruby-on-rails">Ruby on rails</li>
-              <li class="btn-lg">css</li>
-              <li class="btn-lg">javaScript</li>
-            </ul>
-            <button type="button" class="btn-project">See Project</button>
-          </div>
-        </li>
-      </ul>
-    </section>
-    <section class="about-myself" id="about">
+    <section class="cards-project popupopacity" id="portfolio"></section>
+    <section class="about-myself popupopacity" id="about">
       <div class="about-myself-container">
         <div class="about-myself-content">
           <h2 class="section-title">About Myself</h2>
@@ -253,7 +153,7 @@
         </ul>
       </div>
     </section>
-    <footer class="contact-section" id="contact">
+    <footer class="contact-section popupopacity" id="contact">
       <div class="contact">
         <h2>Contact me</h2>
         <p class="contact-section-text-content">
