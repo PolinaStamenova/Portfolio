@@ -260,6 +260,7 @@ for (let i = 0; i < myProjects.length; i += 1) {
   cardUL.appendChild(cardList);
 
   const cardImage = document.createElement("img");
+
   cardImage.className = `card-image${i}`;
   cardImage.src = myProjects[i].image.link;
   cardImage.altText = myProjects[i].image.altText;
@@ -301,6 +302,7 @@ for (let i = 0; i < myProjects.length; i += 1) {
   myProjects[i].technologies.forEach((element) => {
     const cardTechnologie = document.createElement("li");
     cardTechnologie.className = "btn-lg";
+
     cardTechnologie.textContent = element;
     cardTechnologiesList.appendChild(cardTechnologie);
   });
@@ -341,16 +343,17 @@ function seeProjectButton(i) {
 
   let popupCardSpan = document.createElement("span");
 }
+
 // ************Form validation************
 
 const form = document.getElementById("form-contact");
 const emailInput = document.getElementById("user-email");
 const errorMessage = document.getElementById("error-message");
 
-
-form.addEventListener('submit', (e) => {
+form.addEventListener("submit", (e) => {
   if (emailInput.value.toLowerCase() !== emailInput.value) {
     e.preventDefault();
-    errorMessage.textContent ="Please, use only lowercase letter for your email!";
+    errorMessage.textContent =
+      "Please, use only lowercase letter for your email!";
   }
 });
